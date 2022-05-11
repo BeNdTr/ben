@@ -8,19 +8,11 @@
 
 </body>
 <script>
-    let a = +prompt('Nhập a:');
-    console.log(typeof a);
-    let b = Number(prompt('Nhập b:'));
-    if (a === 0) {
-        if (b === 0) {
-            alert('phương trình vô số nghiệm');
-        } else {
-            alert('phương trình vô nghiệm')
-        }
-    } else {
-        let x;
-        x = -b / a;
-        alert(' phương trình có nghiêm ' + x);
+    let text = "";
+    let cars = ["c","o", "d", "e", "g", "y", "m"];
+    for (i = 0; i < cars.length; i++) {
+        text += cars[i] + "<br>";
     }
+    document.write(text);
 </script>
 </html>
