@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let year = parseInt(prompt("Enter a year"));
+    let isLeapYear = false; // Không là năm nhuận
+
+    if (!(year % 4)) { //!(year % 4) được hiểu là khi year chia hết cho 4 trả về giá trị false ! phủ định của false là true
+        if (!(year % 100)) {//!(year % 100) khi chia có dư (chia không hết) sẽ trả về true, phủ định ngược lại sẽ là false
+            if (!(year % 400)) {
+                isLeapYear = true;
+            }
+        } else {
+            isLeapYear = true;
+        }
+    }
+    if (isLeapYear) { // Nếu là true chạy alert đầu tiên
+        alert(`${year} là năm nhuận`);
+    } else { //false chạy alert ở dưới
+        alert(`${year} không là năm nhuận`);
+    }
+//Nếu e có ý định bảo lưu để về tự học thì em phải xác định được e sẽ học như thế nào, học cách gì trước cái gì sau ? .Lộ trình ra sao?.
+    //Có đủ tự giác để học không phân tâm không ....nếu k tất cả là công cốc ....lên lớp thế này chủ động bê máy tìm ng biết hỏi xem tại sao chỗ này lại thế này , chỗ kia lại thế kia
+    //khi e hiểu hãy thử tự làm sai đâu hỏi đó ...làm xong 1 bài e sẽ rất sướng sẽ có ý chi học..đừng ngồi im 1 chỗ mà thọt  ra
+</script>
+</body>
+</html>

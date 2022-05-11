@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 01</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = +prompt('Nhập a:');
+    console.log(typeof a);
+    let b = Number(prompt('Nhập b:'));
+    if (a === 0) {
+        if (b === 0) {
+            alert('phương trình vô số nghiệm');
+        } else {
+            alert('phương trình vô nghiệm')
+        }
+    } else {
+        let x;
+        x = -b / a;
+        alert(' phương trình có nghiêm ' + x);
+    }
+</script>
+</html>

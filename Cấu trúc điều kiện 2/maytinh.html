@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="firstNumber" placeholder="Số thứ nhất" type="number">
+<input id="secondNumber" placeholder="Số thứ hai" type="number">
+<br>
+<button onclick="tinhToan('+')">+</button>
+<button onclick="tinhToan('-')">-</button>
+<button onclick="tinhToan('*')">*</button>
+<button onclick="tinhToan('/')">/</button>
+<p id="ketqua">Kết quả:</p>
+<script src="main4.js"></script>
+</body>
+</html>
+
+
+<script>
+    function tinhToan(toanTu) {
+        let firstNumber = parseInt(document.getElementById('firstNumber').value);
+        let secondNumber = parseInt(document.getElementById('secondNumber').value);
+        let ketqua=0;
+        switch (toanTu) {
+            case '+': {
+                ketqua = firstNumber + secondNumber;
+                break;
+            }
+            case '-': {
+                ketqua = firstNumber - secondNumber;
+                break;
+            }
+            case '*': {
+                ketqua = firstNumber * secondNumber;
+                break;
+            }
+            case '/': {
+                ketqua = firstNumber / secondNumber;
+                break;
+            }
+        }
+        document.getElementById('ketqua').innerHTML = ketqua;
+    }
+</script>
